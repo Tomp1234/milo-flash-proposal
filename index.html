@@ -15,13 +15,13 @@
   --bg-mid: #13131e;
   --bg-card: #16161f;
   --bg-elevated: #1e1e2a;
-  --accent: #4772ff;
-  --accent-dim: rgba(71, 114, 255, 0.12);
-  --accent-border: rgba(71, 114, 255, 0.25);
-  --accent-glow: rgba(71, 114, 255, 0.07);
-  --purple: #7a45ff;
-  --purple-dim: rgba(122, 69, 255, 0.12);
-  --purple-border: rgba(122, 69, 255, 0.25);
+  --accent: #b2fa00;
+  --accent-dim: rgba(178, 250, 0, 0.1);
+  --accent-border: rgba(178, 250, 0, 0.22);
+  --accent-glow: rgba(178, 250, 0, 0.06);
+  --purple: #7efa6e;
+  --purple-dim: rgba(126, 250, 110, 0.08);
+  --purple-border: rgba(126, 250, 110, 0.2);
   --blue: #4772ff;
   --blue-dim: rgba(71, 114, 255, 0.1);
   --blue-border: rgba(71, 114, 255, 0.2);
@@ -101,9 +101,9 @@ body::before {
   text-transform: uppercase;
   padding: 4px 10px;
   border-radius: 4px;
-  background: var(--blue-dim);
-  color: var(--blue);
-  border: 1px solid var(--blue-border);
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
 }
 
 .topbar-date {
@@ -131,7 +131,7 @@ body::before {
   width: 8px; height: 8px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 12px rgba(71, 114, 255, 0.6);
+  box-shadow: 0 0 12px rgba(178, 250, 0, 0.5);
   flex-shrink: 0;
 }
 
@@ -296,7 +296,7 @@ h2 .em { color: var(--accent); }
 }
 
 .flow-node.milo-node {
-  background: linear-gradient(135deg, rgba(71, 114, 255, 0.14), rgba(122, 69, 255, 0.06));
+  background: linear-gradient(135deg, rgba(178, 250, 0, 0.1), rgba(178, 250, 0, 0.03));
   border-color: var(--accent-border);
 }
 
@@ -501,7 +501,7 @@ h2 .em { color: var(--accent); }
 
 .price-card.featured {
   border-color: var(--accent-border);
-  background: linear-gradient(135deg, rgba(71, 114, 255, 0.1), rgba(122, 69, 255, 0.04));
+  background: linear-gradient(135deg, rgba(178, 250, 0, 0.08), rgba(178, 250, 0, 0.02));
 }
 
 .price-card .pc-label {
@@ -592,8 +592,8 @@ h2 .em { color: var(--accent); }
 }
 
 .ref-card.sa-card {
-  border-color: var(--purple-border);
-  background: linear-gradient(135deg, rgba(122, 69, 255, 0.08), transparent);
+  border-color: var(--accent-border);
+  background: linear-gradient(135deg, rgba(178, 250, 0, 0.06), transparent);
 }
 
 .ref-tag {
@@ -610,7 +610,7 @@ h2 .em { color: var(--accent); }
 .ref-tag.igaming { background: var(--blue-dim); color: var(--blue); border: 1px solid var(--blue-border); }
 .ref-tag.ecommerce { background: var(--green-dim); color: var(--green); border: 1px solid var(--green-border); }
 .ref-tag.saas { background: rgba(168, 85, 247, 0.1); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.2); }
-.ref-tag.sa { background: var(--purple-dim); color: var(--purple); border: 1px solid var(--purple-border); }
+.ref-tag.sa { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent-border); }
 
 .ref-card h4 {
   font-family: var(--serif);
@@ -633,7 +633,7 @@ h2 .em { color: var(--accent); }
 }
 
 .cta-inner {
-  background: linear-gradient(135deg, rgba(71, 114, 255, 0.1), rgba(122, 69, 255, 0.05));
+  background: linear-gradient(135deg, rgba(178, 250, 0, 0.08), rgba(178, 250, 0, 0.02));
   border: 1px solid var(--accent-border);
   border-radius: 14px;
   padding: 48px 40px;
