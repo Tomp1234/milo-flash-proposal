@@ -745,9 +745,24 @@ h2 .em { color: var(--accent); }
     <span style="display:none; font-weight:700; font-size:1rem; color:var(--text); letter-spacing:0.04em;">Flash Group</span>
     <span style="color:var(--text-muted); margin: 0 10px; font-size:0.9rem;">×</span>
     <span style="display:flex; align-items:center; gap:7px;">
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
-        <rect width="26" height="26" rx="7" fill="#4772ff"/>
-        <path d="M6 19V8.5L10.5 15.5L13 11L15.5 15.5L20 8.5V19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+        <defs>
+          <linearGradient id="miloGrad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#5b6ef5"/>
+            <stop offset="100%" stop-color="#b44fff"/>
+          </linearGradient>
+        </defs>
+        <rect width="28" height="28" rx="7" fill="url(#miloGrad)"/>
+        <!-- Sparkle (upper-left) -->
+        <path d="M9.5 5.5 L10.4 8.1 L13 9 L10.4 9.9 L9.5 12.5 L8.6 9.9 L6 9 L8.6 8.1 Z" fill="white"/>
+        <!-- Small sparkle dot (upper area) -->
+        <circle cx="14.5" cy="6.5" r="1" fill="white" opacity="0.85"/>
+        <!-- Trend line with dots (lower-right area) -->
+        <polyline points="7,21 11,17.5 15,19.5 21,13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="21" cy="13" r="2" fill="white"/>
+        <circle cx="7" cy="21" r="1.3" fill="white" opacity="0.6"/>
+        <circle cx="11" cy="17.5" r="1.3" fill="white" opacity="0.6"/>
+        <circle cx="15" cy="19.5" r="1.3" fill="white" opacity="0.6"/>
       </svg>
       <span style="font-weight:700; font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase; color:#4772ff;">Milo</span>
     </span>
